@@ -1,0 +1,2 @@
+Placeholder file so the code/ folder is tracked by git.
+Application source will be added in a later lab.
