@@ -43,4 +43,3 @@ Approved scope/version: pending
 Approval date and evidence: pending
 Changes requested: pending
 
-Do not fill this record until actual approval is received.
