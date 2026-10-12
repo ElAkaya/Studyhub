@@ -1,8 +1,8 @@
-# Project 1 sprint backlog — proposed
+# Project 1 sprint backlog
 
-Status: Not started. Instructor approval required before T1–T11.
+Status as of October 11, 2026: instructor approval confirmed by the student; T1–T10 complete. T11 documentation is updated; final release review and submission packaging remain.
 
-Estimates are planning hours, not time already spent. Weekly remaining-work fields are intentionally blank until observed. Do not invent retrospective progress or mark tasks complete before verification. This follows the supplied template's story/task/initial-estimate/weekly-remaining structure.
+Estimates are planning hours, not time already spent. Weekly remaining-work fields remain blank because no weekly checkpoint observations were recorded. Completion below records verified outcomes, not retrospective time estimates. This follows the supplied template's story/task/initial-estimate/weekly-remaining structure.
 
 | Task | Story | Task description | Initial hours | Dependencies | Week 1 remaining | Week 2 remaining | Week 3 remaining | Week 4 remaining |
 | --- | --- | --- | ---: | --- | ---: | ---: | ---: | ---: |
@@ -25,3 +25,18 @@ Before coding each task, create feature/<task-name> from current dev. Write rele
 
 ## Preparation already supplied
 Existing base app and product backlog preserved. Proposed scope and backlog added. Coverage gate increased from 90% to 95%, exact Main/codebehind exclusions applied, and Java compilation aligned with the CI JDK 17. These preparation changes do not represent implementation of T1–T11.
+
+## Completion record — October 11, 2026
+
+| Task | Status | Evidence |
+| --- | --- | --- |
+| P1 | Approval confirmed by student | See scope approval record; original communication is separate |
+| T1 | Complete | Course catalog and tests; PR #3 merged into dev |
+| T2 | Complete | Meeting details and validation tests; PR #4 merged into dev |
+| T3, T4 | Complete | GroupManager, search/filter/create/delete tests; PR #5 merged into dev |
+| T5, T6, T7, T8 | Complete | Main, create and details windows; PR #6 merged into dev |
+| T9 | Complete | 95 passing tests, zero Checkstyle violations, 100% included line coverage |
+| T10 | Complete | macOS window and interaction checks recorded in Project-1-Verification.md |
+| T11 | In progress | README and documentation updated; final dev-to-release PR review and local ZIP packaging remain |
+
+Feature commits are scoped to the catalog, meeting details, group management, and connected windows. Tests were added with each domain feature and verified before its merge. No actual hours or historical weekly progress have been fabricated.

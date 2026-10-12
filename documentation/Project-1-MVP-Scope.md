@@ -1,6 +1,6 @@
-# Project 1 MVP scope — proposed for instructor approval
+# Project 1 MVP scope
 
-Status: Awaiting instructor approval. No new MVP features have been implemented in this preparation package.
+Status: Instructor approval reported by Moria El Akaya on October 11, 2026. US1–US6 are implemented and verified. Final release review and submission packaging are being completed.
 
 ## Product and goal
 StudyHub is a campus study-group finder. This MVP lets a student find a study group for a course and inspect its meeting information using a local JavaFX desktop application.
@@ -38,8 +38,8 @@ Single-user local demonstration with in-memory data. Changes reset when the appl
 - Submission contains real GitHub screenshots and an archive of the local repository folder after mvn clean.
 
 ## Approval record
-Instructor decision: pending
-Approved scope/version: pending
-Approval date and evidence: pending
-Changes requested: pending
+Instructor decision: approved, as confirmed by Moria El Akaya on October 11, 2026.
+Approved scope/version: the proposed US1–US6 scope and associated sprint backlog.
+Approval evidence: the instructor's original approval communication is not attached to this repository.
+Changes requested: no scope changes were reported in the approval confirmation.
 
