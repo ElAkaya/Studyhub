@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox spacing="8" prefWidth="520" prefHeight="570" minWidth="430" minHeight="520"
+      stylesheets="@studyhub.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="edu.westga.studyhub.view.codebehind.GroupDetailsWindow">
+    <padding><Insets top="24" right="24" bottom="24" left="24"/></padding>
+    <Label text="Study group details" styleClass="subtitle"/>
+    <Label fx:id="groupName" wrapText="true" styleClass="title"/>
+    <Label text="Course" styleClass="field-heading"/>
+    <Label fx:id="courseCode" wrapText="true"/>
+    <Label text="Description" styleClass="field-heading"/>
+    <TextArea fx:id="description" editable="false" wrapText="true" prefRowCount="4" VBox.vgrow="ALWAYS"/>
+    <Label text="Meeting time" styleClass="field-heading"/>
+    <Label fx:id="meetingTime" wrapText="true"/>
+    <Label text="Location" styleClass="field-heading"/>
+    <Label fx:id="meetingLocation" wrapText="true"/>
+    <HBox spacing="12"><Label text="Maximum members" styleClass="field-heading"/><Label fx:id="capacity"/></HBox>
+    <HBox alignment="CENTER_RIGHT">
+        <Button fx:id="closeButton" text="Close" onAction="#close" cancelButton="true" styleClass="primary"/>
+    </HBox>
+</VBox>
