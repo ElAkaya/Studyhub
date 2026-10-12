@@ -18,6 +18,7 @@ public class Main extends Application {
     public static final String WINDOW_TITLE = "StudyHub";
     public static final String MAIN_WINDOW_RESOURCE = "view/codebehind/MainWindow.fxml";
     public static final String ADD_GROUP_WINDOW_RESOURCE = "view/codebehind/AddGroupWindow.fxml";
+    public static final String GROUP_DETAILS_WINDOW_RESOURCE = "view/codebehind/GroupDetailsWindow.fxml";
 
     /**
      * JavaFX entry point.
