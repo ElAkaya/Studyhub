@@ -1,0 +1,54 @@
+<%- include('../partials/header', { title: 'Browse courses' }) %>
+
+<p><a href="/documentation">Documentation</a> / Browse courses</p>
+<h1>Browse courses</h1>
+<p class="lead">
+  Explore the demonstration semester catalog and choose the course
+  whose study groups you want to see.
+</p>
+
+<h2>Before you begin</h2>
+<p>
+  <a href="/quickstart">Launch StudyHub</a>.
+  You can browse the course catalog even when no groups have been created.
+</p>
+
+<h2>Step-by-step instructions</h2>
+<ol>
+  <li>On the main window, click <strong>Show all</strong>
+      to clear any previous course selection and search.</li>
+  <li>Open the dropdown next to <strong>Course</strong>.</li>
+  <li>Browse the available demonstration courses.</li>
+  <li>Select a course, such as <strong>CS101</strong>.
+      The group list updates to show groups for that course.</li>
+  <li>To explore another course, open the dropdown and select it.</li>
+  <li>Click <strong>Show all</strong> to return to groups across all courses
+      and clear the search.</li>
+</ol>
+
+<figure>
+  <img src="/images/studyhub-courses.png"
+       alt="StudyHub with CS101 selected in the Course dropdown and its study group displayed">
+  <figcaption>
+    Selecting CS101 filters the list to groups associated with that course.
+  </figcaption>
+</figure>
+
+<h2>What to expect</h2>
+<p>
+  A course can exist in the catalog without having any study groups.
+  If the list is empty, you can
+  <a href="/features/create-group">create a group</a> for that course.
+</p>
+
+<aside class="notice">
+  <strong>Demonstration data:</strong>
+  This catalog is an example semester catalog, not an official university
+  course listing or a connection to a registration system.
+</aside>
+
+<p>
+  Next: <a href="/features/browse-groups">Browse groups for a course</a>
+</p>
+
+<%- include('../partials/footer') %>

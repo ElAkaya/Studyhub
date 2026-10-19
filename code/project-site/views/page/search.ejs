@@ -1,0 +1,54 @@
+<%- include('../partials/header', { title: 'Search by course code' }) %>
+
+<p><a href="/documentation">Documentation</a> / Search by course code</p>
+<h1>Search by course code</h1>
+<p class="lead">
+  Find study groups using a full or partial course code.
+</p>
+
+<h2>Before you begin</h2>
+<p>
+  <a href="/features/create-group">Create a group</a> for CS101
+  if you want to follow the example below.
+</p>
+
+<h2>Step-by-step instructions</h2>
+<ol>
+  <li>Click <strong>Show all</strong> to clear previous filters.</li>
+  <li>Click the <strong>Search code</strong> field.</li>
+  <li>Type <strong>cs101</strong>. The list updates to show
+      groups with matching course codes.</li>
+  <li>Try <strong>CS</strong> to search using part of a course code.
+      Search is case-insensitive, so uppercase and lowercase work.</li>
+  <li>To search within a particular course, select it in the
+      <strong>Course</strong> dropdown. Both filters apply together.</li>
+  <li>Clear the search field to show all groups for the selected course,
+      or click <strong>Show all</strong> to reset both filters.</li>
+</ol>
+
+<figure>
+  <img src="/images/studyhub-search.png"
+       alt="StudyHub showing CS101 Study Crew when lowercase cs101 is entered in Search code">
+  <figcaption>
+    Lowercase cs101 matches the CS101 course code.
+  </figcaption>
+</figure>
+
+<h2>If no results appear</h2>
+<p>
+  Check the course code and your selected course. For example,
+  searching for CS101 while MATH101 is selected will not show
+  a CS101 group. Click <strong>Show all</strong> and try again.
+</p>
+
+<aside class="notice">
+  <strong>Search behavior:</strong>
+  Leading and trailing spaces are ignored. Search matches course codes,
+  not group names, descriptions, meeting times, or locations.
+</aside>
+
+<p>
+  Next: <a href="/features/create-group">Create a group</a>
+</p>
+
+<%- include('../partials/footer') %>

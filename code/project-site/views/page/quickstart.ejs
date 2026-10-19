@@ -1,0 +1,96 @@
+<%- include('../partials/header', { title: 'Quickstart' }) %>
+
+<h1>Launch StudyHub</h1>
+<p class="lead">
+  Follow these steps to run the JavaFX desktop application on your computer.
+</p>
+
+<h2>1. Check your prerequisites</h2>
+<p>
+  You need Git, JDK 17, and Maven installed, plus a desktop environment
+  that can display application windows. Internet access is needed to
+  download the repository and Maven dependencies.
+</p>
+<p>Open Terminal or your command prompt and run:</p>
+<pre><code>git --version
+java -version
+mvn -version</code></pre>
+<p>
+  Confirm that Maven reports Java 17. If a command is not found,
+  install the corresponding tool before continuing.
+</p>
+
+<h2>2. Obtain the project</h2>
+<p>
+  In a folder where you want a new copy of the project, run:
+</p>
+<pre><code>git clone https://github.com/ElAkaya/Studyhub.git
+cd Studyhub</code></pre>
+<p>
+  If you already have the repository, open its existing folder instead
+  of cloning it again. For example, on macOS:
+</p>
+<pre><code>cd ~/Downloads/Studyhub</code></pre>
+
+<h2>3. Build and verify</h2>
+<p>From the Studyhub repository folder, run:</p>
+<pre><code>mvn -f code/studyhub-app/pom.xml clean verify</code></pre>
+<p>
+  Wait for Maven to finish downloading dependencies, compiling, and running
+  its checks. Continue when the output reports BUILD SUCCESS.
+</p>
+
+<h2>4. Launch the application</h2>
+<pre><code>mvn -f code/studyhub-app/pom.xml javafx:run</code></pre>
+<p>
+  The StudyHub desktop window opens. Leave the Terminal process running
+  while you use the application.
+</p>
+
+<figure>
+  <img src="/images/studyhub-home.png"
+       alt="StudyHub main window with course selection, search, group list, and action buttons">
+  <figcaption>
+    The main window after creating an example group.
+    Your group list may be empty when you first launch the application.
+  </figcaption>
+</figure>
+
+<h2>5. Try your first group</h2>
+<ol>
+  <li>Click <strong>Create group</strong>.</li>
+  <li>Enter a group name and select a catalog course.</li>
+  <li>Fill in the description, meeting time, and location.</li>
+  <li>Enter a positive whole number for <strong>Maximum members</strong>.</li>
+  <li>Click <strong>Save group</strong>, then <strong>Show all</strong>
+      to see the group in the main list.</li>
+  <li>Select the group and click <strong>View details</strong>.</li>
+</ol>
+<p>
+  See the <a href="/features/create-group">create-group guide</a>
+  for example values and validation help.
+</p>
+
+<h2>6. Close StudyHub</h2>
+<p>
+  Close the application window when finished. Groups exist only for
+  the current session and are not retained when the application closes.
+</p>
+
+<h2>Troubleshooting</h2>
+<ul>
+  <li><strong>Maven uses the wrong Java version:</strong>
+      configure JAVA_HOME for your JDK 17 installation, reopen Terminal,
+      and check <code>mvn -version</code> again.</li>
+  <li><strong>Maven cannot find the POM:</strong>
+      run the commands from the Studyhub repository folder and confirm
+      that <code>code/studyhub-app/pom.xml</code> exists.</li>
+  <li><strong>Dependencies cannot download:</strong>
+      check your internet connection and review the Maven error message.</li>
+  <li><strong>No groups appear:</strong>
+      create a group, then click <strong>Show all</strong> to clear filters.</li>
+</ul>
+
+<p><a href="/documentation">Back to all feature guides</a></p>
+
+<%- include('../partials/footer') %>
