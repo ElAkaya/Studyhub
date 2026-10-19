@@ -1,0 +1,56 @@
+<%- include('../partials/header', { title: 'Home' }) %>
+
+<p>Campus study-group finder</p>
+<h1>StudyHub</h1>
+<p class="lead">
+  Find your next study session. StudyHub is a JavaFX desktop application
+  that helps students browse study groups by course, search course codes,
+  and view meeting information.
+</p>
+<p>
+  Create a group with its description, meeting time, location, and maximum
+  number of members. You can also remove a group after confirming deletion.
+</p>
+
+<div class="actions">
+  <a class="button" href="/documentation">Read the documentation</a>
+  <a class="button" href="/quickstart">Get started</a>
+  <a class="button" href="https://github.com/ElAkaya/Studyhub">View GitHub repository</a>
+</div>
+
+<figure>
+  <img src="/images/studyhub-home.png"
+       alt="StudyHub running on macOS with the CS101 Study Crew group in the main list">
+  <figcaption>
+    StudyHub running with an example study group, course filtering,
+    search, and group actions.
+  </figcaption>
+</figure>
+
+<h2>What you can do</h2>
+<div class="cards">
+  <section class="card">
+    <h3>Find a group</h3>
+    <p>Browse the demonstration course catalog, filter groups by course,
+       and search by course code.</p>
+  </section>
+  <section class="card">
+    <h3>Explore meeting details</h3>
+    <p>Open a separate window to read a group's description, course,
+       meeting time, location, and capacity.</p>
+  </section>
+  <section class="card">
+    <h3>Manage local groups</h3>
+    <p>Create groups using a validated form and delete groups
+       through a confirmation dialog.</p>
+  </section>
+</div>
+
+<aside class="notice">
+  <strong>About this demonstration:</strong>
+  StudyHub is a single-user, local application with an example course
+  catalog. Groups are kept in memory and reset when the application closes.
+  Accounts, joining groups, and online collaboration are not included.
+</aside>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,55 @@
+<%- include('../partials/header', { title: 'View group details' }) %>
+
+<p><a href="/documentation">Documentation</a> / View group details</p>
+<h1>View group details</h1>
+<p class="lead">
+  Open a separate window to read a study group's meeting information.
+</p>
+
+<h2>Before you begin</h2>
+<p>
+  You need at least one group in the current session.
+  If the list is empty, <a href="/features/create-group">create a group</a>
+  and click <strong>Show all</strong>.
+</p>
+
+<h2>Step-by-step instructions</h2>
+<ol>
+  <li>Find a group in the main window by
+      <a href="/features/browse-groups">browsing groups</a>
+      or <a href="/features/search">searching by course code</a>.</li>
+  <li>Click the group in the list to select it.</li>
+  <li>Click <strong>View details</strong>.</li>
+  <li>In the separate details window, review the group name,
+      course, description, meeting time, location,
+      and <strong>Maximum members</strong>.</li>
+  <li>Click <strong>Close</strong> to return to the main window.</li>
+</ol>
+
+<figure>
+  <img src="/images/studyhub-details.png"
+       alt="StudyHub details window showing the CS101 Study Crew group's meeting information">
+  <figcaption>
+    The details window displays the information entered when the group
+    was created.
+  </figcaption>
+</figure>
+
+<h2>What to expect</h2>
+<p>
+  The details window is read-only. Viewing or closing it does not change
+  the group. You must select a group before opening its details.
+</p>
+
+<aside class="notice">
+  <strong>Understanding the information:</strong>
+  Maximum members is the group's configured capacity, not a count of
+  enrolled members. Meeting time is descriptive text; StudyHub does not
+  schedule events or check for time conflicts.
+</aside>
+
+<p>
+  Next: <a href="/features/search">Search by course code</a>
+</p>
+
+<%- include('../partials/footer') %>
