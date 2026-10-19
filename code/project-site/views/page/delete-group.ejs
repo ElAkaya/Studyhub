@@ -1,0 +1,58 @@
+<%- include('../partials/header', { title: 'Delete a group' }) %>
+
+<p><a href="/documentation">Documentation</a> / Delete a group</p>
+<h1>Delete a study group</h1>
+<p class="lead">
+  Remove a group from the current session after confirming your choice.
+</p>
+
+<h2>Before you begin</h2>
+<p>
+  You need an existing group to delete. You can
+  <a href="/features/create-group">create an example group</a>
+  to practice this feature.
+</p>
+
+<h2>Step-by-step instructions</h2>
+<ol>
+  <li>On the main window, click <strong>Show all</strong>
+      or filter the list to find your group.</li>
+  <li>Click the group you want to remove to select it.</li>
+  <li>Click <strong>Delete group</strong>.</li>
+  <li>Read the confirmation dialog and check that you selected
+      the intended group.</li>
+  <li>To keep the group, click <strong>Cancel</strong>.
+      To remove it, choose the dialog's confirmation option.</li>
+  <li>After confirming, check the main list. The group is removed,
+      and the displayed list and result count update.</li>
+</ol>
+
+<figure>
+  <img src="/images/studyhub-delete.png"
+       alt="StudyHub confirmation dialog displayed before deleting a selected study group">
+  <figcaption>
+    Review the confirmation before removing a group.
+    Cancel keeps the group unchanged.
+  </figcaption>
+</figure>
+
+<h2>What to expect</h2>
+<p>
+  A group must be selected before it can be deleted.
+  If you delete the last group matching your filters, the list
+  displays its empty state.
+</p>
+<p>
+  Deletion has no undo feature. If you remove a group by mistake,
+  use <strong>Create group</strong> to enter its information again.
+</p>
+
+<aside class="notice">
+  <strong>Local demonstration:</strong>
+  This application has no accounts or group-leader authorization.
+  Deletion affects only the groups in the current local session.
+</aside>
+
+<p><a href="/documentation">Back to all feature guides</a></p>
+
+<%- include('../partials/footer') %>

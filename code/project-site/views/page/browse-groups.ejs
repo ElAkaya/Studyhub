@@ -1,0 +1,61 @@
+<%- include('../partials/header', { title: 'Browse groups' }) %>
+
+<p><a href="/documentation">Documentation</a> / Browse groups</p>
+<h1>Browse groups for a course</h1>
+<p class="lead">
+  Find the study groups associated with your selected course.
+</p>
+
+<h2>Before you begin</h2>
+<p>
+  <a href="/quickstart">Launch StudyHub</a> and
+  <a href="/features/create-group">create an example group</a>
+  if your list is empty. Groups exist only for the current session.
+</p>
+
+<h2>Step-by-step instructions</h2>
+<ol>
+  <li>Click <strong>Show all</strong> to display all current groups
+      and clear previous filters.</li>
+  <li>Open the <strong>Course</strong> dropdown.</li>
+  <li>Select the course you want to browse, such as
+      <strong>CS101</strong>.</li>
+  <li>Review the resulting group list and the result count above it.
+      Groups for other courses are hidden.</li>
+  <li>Click a group to select it. To read its meeting information,
+      click <strong>View details</strong>.</li>
+  <li>Click <strong>Show all</strong> when you want to browse
+      groups across all courses again.</li>
+</ol>
+
+<figure>
+  <img src="/images/studyhub-courses.png"
+       alt="StudyHub showing CS101 Study Crew after filtering the group list to CS101">
+  <figcaption>
+    The group list displays groups belonging to the selected course.
+  </figcaption>
+</figure>
+
+<h2>If no groups appear</h2>
+<p>
+  The empty state means no current groups match your filters.
+  Clear any text in <strong>Search code</strong> to see all groups
+  for the selected course, or click <strong>Show all</strong>
+  to reset both filters.
+</p>
+<p>
+  If the course still has no groups, click <strong>Create group</strong>
+  and select that course in the form.
+</p>
+
+<aside class="notice">
+  <strong>Filters work together:</strong>
+  When a course is selected and search text is entered, a group must
+  match both conditions to appear.
+</aside>
+
+<p>
+  Next: <a href="/features/view-details">View group details</a>
+</p>
+
+<%- include('../partials/footer') %>
