@@ -1,0 +1,21 @@
+{
+  "name": "studyhub-login-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "StudyHub login and account creation (Node.js + SQLite) with Jest tests",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest --verbose"
+  },
+  "engines": {
+    "node": "24.13.0",
+    "npm": "11.14.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "jest": "30.5.2"
+  }
+}
