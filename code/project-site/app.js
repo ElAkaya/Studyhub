@@ -40,6 +40,6 @@ app.use((req, res) => {
   res.status(404).send('Page not found. Return to <a href="/">StudyHub home</a>.');
 });
 
-app.listen(8080, () => {
+app.listen(process.env.PORT || 8080, () => {
   console.log('StudyHub project site: http://localhost:8080');
 });
