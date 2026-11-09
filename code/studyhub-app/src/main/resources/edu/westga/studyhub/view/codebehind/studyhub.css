@@ -1,0 +1,24 @@
+.root {
+    -fx-font-family: "System";
+    -fx-font-size: 13px;
+    -fx-background-color: #f6f8fc;
+}
+.label { -fx-text-fill: #23334d; }
+.title { -fx-font-size: 25px; -fx-font-weight: bold; }
+.subtitle { -fx-text-fill: #57677f; }
+.notice {
+    -fx-padding: 10px;
+    -fx-background-color: #e7eef9;
+    -fx-background-radius: 6px;
+}
+.field-heading { -fx-font-weight: bold; }
+.button {
+    -fx-padding: 8px 14px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+.primary { -fx-background-color: #285db0; -fx-text-fill: white; }
+.primary:hover { -fx-background-color: #214d91; }
+.error { -fx-text-fill: #a32222; }
+.list-view { -fx-background-radius: 6px; }
+.list-cell { -fx-padding: 12px; }

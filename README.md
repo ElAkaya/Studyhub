@@ -15,8 +15,24 @@ I chose this project because I am interested in building tools that help college
 
 ## Development setup
 
-_To be completed in a later lab._
+Use JDK 17 and Maven. From the repository root, launch the application:
+
+```bash
+mvn -f code/studyhub-app/pom.xml javafx:run
+```
+
+The Project 1 MVP offers a labeled demo course catalog, course selection and code search, group creation, read-only meeting details, and confirmed deletion. It uses three JavaFX windows. Select a group to enable View details and Delete group.
+
+Group data is in memory and resets when the app closes. The broader product vision above includes future features; accounts, joining groups, announcements, persistence and moderation are outside this MVP.
+
+See documentation/Project-1-MVP-Scope.md and documentation/Project-1-Sprint-Backlog.md for the scope and tasks.
 
 ## Test setup
 
-_To be completed in a later lab._
+Run the build, unit tests, course Checkstyle and coverage gate:
+
+```bash
+mvn -f code/studyhub-app/pom.xml clean verify
+```
+
+Coverage must reach at least 95% lines in each included package. Only Main and FXML codebehind classes are excluded. The HTML coverage report is generated at code/studyhub-app/target/site/jacoco/index.html. See documentation/Project-1-Verification.md for observed results.

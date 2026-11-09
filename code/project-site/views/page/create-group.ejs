@@ -1,0 +1,74 @@
+<%- include('../partials/header', { title: 'Create a group' }) %>
+
+<p><a href="/documentation">Documentation</a> / Create a group</p>
+<h1>Create a study group</h1>
+<p class="lead">
+  Add a group with a course, meeting information, and member capacity.
+</p>
+
+<h2>Step-by-step instructions</h2>
+<ol>
+  <li>On the main window, click <strong>Create group</strong>.
+      A separate form window opens.</li>
+  <li>Enter a <strong>Group name</strong>.</li>
+  <li>Select a catalog course from the <strong>Course</strong> dropdown.</li>
+  <li>Enter a <strong>Description</strong> explaining what the group
+      will study.</li>
+  <li>Fill in the <strong>Meeting time</strong> and
+      <strong>Location</strong>.</li>
+  <li>Enter a positive whole number in <strong>Maximum members</strong>.</li>
+  <li>Click <strong>Save group</strong>. When the form is valid,
+      the window closes and the group is added to the current session.</li>
+  <li>Click <strong>Show all</strong> on the main window to see the
+      new group even if previous filters would hide it.</li>
+</ol>
+
+<h2>Example values</h2>
+<table>
+  <thead>
+    <tr><th scope="col">Field</th><th scope="col">Example</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Group name</td><td>CS101 Study Crew</td></tr>
+    <tr><td>Course</td><td>CS101</td></tr>
+    <tr><td>Description</td><td>Review programming concepts and practice course exercises together.</td></tr>
+    <tr><td>Meeting time</td><td>Mondays at 3 PM</td></tr>
+    <tr><td>Location</td><td>Campus library, study room 2</td></tr>
+    <tr><td>Maximum members</td><td>5</td></tr>
+  </tbody>
+</table>
+
+<figure>
+  <img src="/images/studyhub-create.png"
+       alt="StudyHub create-group form filled with example group and meeting information">
+  <figcaption>
+    Complete all fields before selecting Save group.
+  </figcaption>
+</figure>
+
+<h2>Correcting invalid input</h2>
+<p>
+  All fields are required. Text fields cannot contain only spaces,
+  a catalog course must be selected, and capacity must be a positive
+  integer. Values such as abc, 0, negative numbers, or decimals are invalid.
+</p>
+<p>
+  If validation fails, the form stays open with your entries preserved
+  and displays an error. Correct the indicated problem and click
+  <strong>Save group</strong> again.
+</p>
+
+<h2>Cancel without saving</h2>
+<p>
+  Click <strong>Cancel</strong> to close the form without adding a group.
+</p>
+
+<aside class="notice">
+  <strong>Session-only storage:</strong>
+  Saving adds the group to the running application's memory.
+  It does not save the group permanently; groups reset when StudyHub closes.
+</aside>
+
+<p>Next: <a href="/features/delete-group">Delete a group</a></p>
+
+<%- include('../partials/footer') %>
